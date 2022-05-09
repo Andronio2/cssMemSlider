@@ -5,12 +5,56 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #25282a;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .slider-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 1px;
+}
+
+.picture {
   max-width: 100%;
+  min-width: 0;
+}
+
+.picture img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.label-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.label-box .label {
+  height: 30px;
+  width: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' style='fill:%2371abff; stroke-width:4px; stroke:%2371abff;'/%3E%3C/svg%3E ");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.label-box .label:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' style='fill:%23FFFFFF; stroke-width:4px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
+}
+
+#radio1:checked ~ .wrapper .label[for="radio1"], #radio2:checked ~ .wrapper .label[for="radio2"], #radio3:checked ~ .wrapper .label[for="radio3"], #radio4:checked ~ .wrapper .label[for="radio4"], #radio5:checked ~ .wrapper .label[for="radio5"], #radio6:checked ~ .wrapper .label[for="radio6"], #radio7:checked ~ .wrapper .label[for="radio7"], #radio8:checked ~ .wrapper .label[for="radio8"], #radio9:checked ~ .wrapper .label[for="radio9"] {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' style='fill:none; stroke-width:4px; stroke:%2371abff;'/%3E%3C/svg%3E ");
+}
+
+#radio1:checked ~ .wrapper .label[for="radio1"]:hover, #radio2:checked ~ .wrapper .label[for="radio2"]:hover, #radio3:checked ~ .wrapper .label[for="radio3"]:hover, #radio4:checked ~ .wrapper .label[for="radio4"]:hover, #radio5:checked ~ .wrapper .label[for="radio5"]:hover, #radio6:checked ~ .wrapper .label[for="radio6"]:hover, #radio7:checked ~ .wrapper .label[for="radio7"]:hover, #radio8:checked ~ .wrapper .label[for="radio8"]:hover, #radio9:checked ~ .wrapper .label[for="radio9"]:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' style='fill:none; stroke-width:4px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
 }
 /*# sourceMappingURL=style.css.map */
