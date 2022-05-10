@@ -97,6 +97,7 @@ body {
 
 .label-box .label:hover {
   background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' fill='%23FFFFFF' stroke-width='3' stroke='%23FFFFFF'/%3E%3C/svg%3E ");
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
