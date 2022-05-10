@@ -90,13 +90,13 @@ body {
 .label-box .label {
   height: 2rem;
   width: 1.4rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:%2371abff; stroke-width:3px; stroke:%2371abff;'/%3E%3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' fill='%2371abff' stroke-width='3' stroke='%2371abff'/%3E%3C/svg%3E ");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .label-box .label:hover {
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:%23FFFFFF; stroke-width:3px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' fill='%23FFFFFF' stroke-width='3' stroke='%23FFFFFF'/%3E%3C/svg%3E ");
 }
 
 @media (max-width: 768px) {
@@ -108,11 +108,11 @@ body {
 }
 
 #radio1:checked ~ .wrapper .label[for="radio1"], #radio2:checked ~ .wrapper .label[for="radio2"], #radio3:checked ~ .wrapper .label[for="radio3"], #radio4:checked ~ .wrapper .label[for="radio4"], #radio5:checked ~ .wrapper .label[for="radio5"], #radio6:checked ~ .wrapper .label[for="radio6"], #radio7:checked ~ .wrapper .label[for="radio7"], #radio8:checked ~ .wrapper .label[for="radio8"], #radio9:checked ~ .wrapper .label[for="radio9"] {
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:none; stroke-width:3px; stroke:%2371abff;'/%3E%3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' fill='none' stroke-width='3' stroke='%2371abff'/%3E%3C/svg%3E ");
 }
 
 #radio1:checked ~ .wrapper .label[for="radio1"]:hover, #radio2:checked ~ .wrapper .label[for="radio2"]:hover, #radio3:checked ~ .wrapper .label[for="radio3"]:hover, #radio4:checked ~ .wrapper .label[for="radio4"]:hover, #radio5:checked ~ .wrapper .label[for="radio5"]:hover, #radio6:checked ~ .wrapper .label[for="radio6"]:hover, #radio7:checked ~ .wrapper .label[for="radio7"]:hover, #radio8:checked ~ .wrapper .label[for="radio8"]:hover, #radio9:checked ~ .wrapper .label[for="radio9"]:hover {
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:none; stroke-width:3px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' fill='none' stroke-width='3' stroke='%23FFFFFF'/%3E%3C/svg%3E ");
 }
 
 .text-box {
