@@ -99,28 +99,12 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:%23FFFFFF; stroke-width:3px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
 }
 
-.text-box {
-  position: relative;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  width: 100%;
-  height: 1.2rem;
-  overflow: hidden;
-}
-
-.text-box .text {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  left: 100%;
-  height: 1.2rem;
-  color: #fff;
-  font: 1.2rem Arial, sans-serif;
-  line-height: 1.2rem;
-  background-color: #25282a;
-  -webkit-transition: left 0s linear 0.5s;
-  transition: left 0s linear 0.5s;
+@media (max-width: 768px) {
+  .label-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #radio1:checked ~ .wrapper .label[for="radio1"], #radio2:checked ~ .wrapper .label[for="radio2"], #radio3:checked ~ .wrapper .label[for="radio3"], #radio4:checked ~ .wrapper .label[for="radio4"], #radio5:checked ~ .wrapper .label[for="radio5"], #radio6:checked ~ .wrapper .label[for="radio6"], #radio7:checked ~ .wrapper .label[for="radio7"], #radio8:checked ~ .wrapper .label[for="radio8"], #radio9:checked ~ .wrapper .label[for="radio9"] {
@@ -131,10 +115,60 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6' style='fill:none; stroke-width:3px; stroke:%23FFFFFF;'/%3E%3C/svg%3E ");
 }
 
+.text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  height: 1.2rem;
+  overflow: hidden;
+}
+
+.text-box .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 0;
+  height: 1.2rem;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  color: #25282a;
+  font: 1.2rem Arial, sans-serif;
+  line-height: 1.2rem;
+  background-color: #25282a;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 #radio1:checked ~ .wrapper .text__text1, #radio2:checked ~ .wrapper .text__text2, #radio3:checked ~ .wrapper .text__text3, #radio4:checked ~ .wrapper .text__text4, #radio5:checked ~ .wrapper .text__text5, #radio6:checked ~ .wrapper .text__text6, #radio7:checked ~ .wrapper .text__text7, #radio8:checked ~ .wrapper .text__text8, #radio9:checked ~ .wrapper .text__text9 {
-  z-index: 1;
-  left: 0;
-  -webkit-transition: left 0.5s linear 0s;
-  transition: left 0.5s linear 0s;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.5s linear 0s;
+  transition: -webkit-transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s, -webkit-transform 0.5s linear 0s;
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 0.8rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
